@@ -27,7 +27,7 @@
 - `=` → **operador de atribuição** (coloca um valor na variável): `let age = 20;`
 - Vantagem do `let`: permite reatribuir valores
 
-### Regras de nomes
+### Como nomear variáveis
 - O nome deve descrever o que o dado representa
 - Deve começar com letra, sublinhado (`_`) ou cifrão (`$`); **não** pode começar com número
 - Diferencia maiúsculas de minúsculas: `age` e `Age` são variáveis diferentes
