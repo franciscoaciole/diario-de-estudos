@@ -2,47 +2,35 @@
 
 ## 16/11/2026
 
+### Comentários
 ```js
 // comentário de uma linha
 /* comentário de
    várias linhas */
 ```
-   
-ponto flutuante = numeros com casa decimais (3.14 , 7.2)
 
-Strings são usadas para representar nomes, rotulos, mensagens...
-Booleanos = true or false
-undefined = variavel declarada sem valor 
-null = váriavel definida como nada intencionalmente e não contem nenhum valor
+### Tipos de dados
+- **Number** = números inteiros e decimais (ponto flutuante: 3.14, 7.2)
+- **String** = usada para representar nomes, rótulos, mensagens...
+- **Boolean** = true ou false
+- **undefined** = variável declarada sem valor
+- **null** = variável definida como "nada" intencionalmente; não contém nenhum valor
+- **Object** = coleção de pares chave-valor
+- **Symbol** = tipo especial de valor, sempre único e imutável; usado para criar identificadores únicos para propriedades
+- **BigInt** = usado para números grandes que excedem o Number
 
-Object, symbol e BigInt
-Object = é uma coleçao de pares chave-valor
-Symbol = tipo especial de valor, sempre unico, não pode ser alterado. Muito usado para criar rotulos ou identificadores unicos para propriedades.
-BigInt = usado para numeros grandes que excedem o Number
-(symbol e bigint são menos comuns, porem é interessante saber)
+> Symbol e BigInt são menos comuns, porém é interessante saber.
 
-Váriaveis = são caixas que armazenam valores , pode ser usado para consultar sempre q preciso
+### Variáveis
+- São caixas que armazenam valores, para consultar sempre que preciso
+- `let age;` → declara a variável
+- `=` → **operador de atribuição** (coloca um valor na variável): `let age = 20;`
+- Vantagem do `let`: permite reatribuir valores
 
-- let age
-- Atribuir um valor a uma variavel
-
-= Operador de  Atribuição
-
-
-uma das vantagens de usar let é que existe a possibilidade de reatribuir valores a elas.
-
-Os nomes das variaveis devem descrever o que os dados representam
-
-As variaveis devem começar com letra, um sublinhado (_) ou um cifrão ($)
-- nao podem ser começadas com numero
-
-  Maiusculas x Minusculas
-  age e Age sao consideradas variaveis diferentes
-
-  - CamelCase
-  a primeira palavra é escrita em minuscula e as subsequentes começam com maiusculas;
-ex: let thisIsCamelCase;
-
-Palavra-chave = nao pode ser usada como nome de variavel
-- sao : let, const, function , return .
-- evitar usar caracteres especiais 
+### Regras de nomes
+- O nome deve descrever o que o dado representa
+- Deve começar com letra, sublinhado (`_`) ou cifrão (`$`); **não** pode começar com número
+- Diferencia maiúsculas de minúsculas: `age` e `Age` são variáveis diferentes
+- Usar **camelCase**: primeira palavra minúscula, as seguintes com inicial maiúscula → `let thisIsCamelCase;`
+- Palavras-chave (`let`, `const`, `function`, `return`) não podem ser nomes de variáveis
+- Evitar caracteres especiais
