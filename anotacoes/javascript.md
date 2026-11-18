@@ -34,3 +34,43 @@
 - Usar **camelCase**: primeira palavra minúscula, as seguintes com inicial maiúscula → `let thisIsCamelCase;`
 - Palavras-chave (`let`, `const`, `function`, `return`) não podem ser nomes de variáveis
 - Evitar caracteres especiais
+
+
+## Aula 2 — let, const e var (18/11)
+
+### let
+- Declara variáveis que **podem ser reatribuídas** (recebem outro valor depois).
+- Não pode ser **redeclarada** no mesmo escopo.
+- Pense nela como um "contêiner flexível".
+
+```js
+let score = 10;
+console.log(score); // 10
+score = 20;
+console.log(score); // 20
+```
+
+### const
+- Declara variáveis que **não podem ser reatribuídas**.
+- Precisa receber um valor **na hora da declaração**, senão dá erro.
+- É ideal para valores que não devem mudar por acidente.
+- Se guardar uma lista ou um objeto, o **conteúdo** ainda pode mudar. Só a variável não aponta para outro valor.
+
+```js
+const maxScore = 100;
+console.log(maxScore); // 100
+maxScore = 200; // erro: não pode reatribuir
+```
+
+### var
+- É a forma antiga de declarar variáveis e **não é recomendada**.
+- Funciona parecido com `let`, mas tem **escopo amplo** (vaza para fora dos blocos `{ }`), o que aumenta a chance de bugs.
+
+### Resumo
+| Palavra | Reatribuir? | Redeclarar? | Usar? |
+|---------|-------------|-------------|-------|
+| `let`   | Sim         | Não         | Sim   |
+| `const` | Não         | Não         | Sim (padrão) |
+| `var`   | Sim         | Sim         | Evitar |
+
+> **Dica:** use `const` por padrão e troque para `let` só quando o valor precisar mudar.
